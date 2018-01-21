@@ -1,13 +1,12 @@
-declare module 'truffle-deployer' {
+declare module 'truffle' {
     import * as truffle from 'truffle-contract'
-  
-    namespace Deployer { }
-  
-    class Deployer {
-      deploy <A> (contract: truffle.TruffleContract<A>, ...args: Array<any>): Promise<void>
-      link <A, B> (library: truffle.TruffleContract<A>, contract: truffle.TruffleContract<B>): Promise<void>
-      network_id: string
+
+    interface ArtifactsGlobal {
+        require <A> (name: string): truffle.TruffleContract<A>
     }
-  
-    export = Deployer
-  }
+
+    global {
+        function contract (name: string, callback: (accounts: Array<string>) => void): void
+        const artifacts: ArtifactsGlobal
+    }
+}
