@@ -1,0 +1,23 @@
+{
+  "name": "@machinomy/types-truffle",
+  "version": "0.0.1",
+  "description": "TypeScript declaration for truffle package",
+  "main": "index.d.js",
+  "types": "index.d.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machinomy/types-truffle.git"
+  },
+  "author": "Sergey Ukustov <sergey.ukustov@machinomy.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/machinomy/types-truffle/issues"
+  },
+  "homepage": "https://github.com/machinomy/types-truffle#readme",
+  "dependencies": {
+    "@machinomy/types-truffle-deployer": "https://github.com/machinomy/types-truffle-deployer",
+    "@machinomy/types-truffle-contract": "https://github.com/machinomy/types-truffle-contract",
+    "truffle-contract": "^3.0.2",
+    "truffle-deployer": "^2.0.1"
+  }
+}
