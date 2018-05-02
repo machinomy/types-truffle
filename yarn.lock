@@ -2,21 +2,27 @@
 # yarn lockfile v1
 
 
-"@machinomy/types-truffle-contract@https://github.com/machinomy/types-truffle-contract":
-  version "0.0.1"
-  resolved "https://github.com/machinomy/types-truffle-contract#112f61ec4527a0fbf7c1b9bcc0bedaa6be42caa7"
+"@machinomy/types-truffle-contract@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@machinomy/types-truffle-contract/-/types-truffle-contract-0.0.3.tgz#76442f485647382ce8d676af04ebcff35afee68f"
   dependencies:
+    "@machinomy/types-web3" "^0.0.4"
     truffle-contract "^3.0.0"
     web3 "^0.20.2"
-    web3-typescript-typings "https://github.com/0xProject/web3-typescript-typings"
 
-"@machinomy/types-truffle-deployer@https://github.com/machinomy/types-truffle-deployer":
-  version "0.0.1"
-  resolved "https://github.com/machinomy/types-truffle-deployer#4d3b81058de680bae5420884e7d9728868397566"
+"@machinomy/types-truffle-deployer@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@machinomy/types-truffle-deployer/-/types-truffle-deployer-0.0.3.tgz#9e5883cc6932578e2ce6f6df6dcbba8cc35c43cb"
   dependencies:
-    "@machinomy/types-truffle-contract" "https://github.com/machinomy/types-truffle-contract"
+    "@machinomy/types-truffle-contract" "^0.0.3"
     truffle-contract "^3.0.2"
     truffle-deployer "^2.0.1"
+
+"@machinomy/types-web3@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@machinomy/types-web3/-/types-web3-0.0.4.tgz#aca033c0cabfc89757511410f5d5149af17fb497"
+  dependencies:
+    bignumber.js "^4.0.2"
 
 ajv@^5.1.1:
   version "5.5.2"
@@ -129,15 +135,19 @@ utf8@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/utf8/-/utf8-2.1.2.tgz#1fa0d9270e9be850d9b05027f63519bf46457d96"
 
-"web3-typescript-typings@https://github.com/0xProject/web3-typescript-typings":
-  version "0.9.0"
-  resolved "https://github.com/0xProject/web3-typescript-typings#eed781384688aa7ebb26f5c302407dcea931e59f"
-  dependencies:
-    bignumber.js "^4.0.2"
-
-web3@^0.20.1, web3@^0.20.2:
+web3@^0.20.1:
   version "0.20.4"
   resolved "https://registry.yarnpkg.com/web3/-/web3-0.20.4.tgz#400e6579a65bb4a3dde71a6ebf6509afadc33a04"
+  dependencies:
+    bignumber.js "git+https://github.com/frozeman/bignumber.js-nolookahead.git"
+    crypto-js "^3.1.4"
+    utf8 "^2.1.1"
+    xhr2 "*"
+    xmlhttprequest "*"
+
+web3@^0.20.2:
+  version "0.20.6"
+  resolved "https://registry.yarnpkg.com/web3/-/web3-0.20.6.tgz#3e97306ae024fb24e10a3d75c884302562215120"
   dependencies:
     bignumber.js "git+https://github.com/frozeman/bignumber.js-nolookahead.git"
     crypto-js "^3.1.4"
