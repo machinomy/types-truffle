@@ -1,6 +1,6 @@
 {
   "name": "@machinomy/types-truffle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript declaration for truffle",
   "main": "index.d.ts",
   "types": "index.d.ts",
@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/machinomy/types-truffle#readme",
   "dependencies": {
-    "@types/web3": "^1.0.19",
-    "@machinomy/types-truffle-resolver": "^0.1.0"
+    "@machinomy/types-truffle-resolver": "^0.1.1",
+    "@types/web3": "^1.0.19"
   }
 }
