@@ -1,6 +1,6 @@
 {
   "name": "@machinomy/types-truffle",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "description": "TypeScript declaration for truffle package",
   "main": "index.d.js",
   "types": "index.d.js",
