@@ -1,12 +1,9 @@
 {
-  "name": "@machinomy/types-truffle",
-  "private": true,
-  "description": "TypeScript declaration for truffle packages",
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
+  "name": "@machinomy/types-truffle-contract",
+  "version": "0.1.0",
+  "description": "TypeScript declaration for truffle-contract",
+  "main": "index.d.ts",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/machinomy/types-truffle.git"
@@ -17,7 +14,11 @@
     "url": "https://github.com/machinomy/types-truffle/issues"
   },
   "homepage": "https://github.com/machinomy/types-truffle#readme",
-  "devDependencies": {
-    "lerna": "^3.15.0"
+  "dependencies": {
+    "@types/web3": "^1.0.19"
+  },
+  "peerDependencies": {
+    "web3": "^1.0.x",
+    "truffle-contract": "^4.0.x"
   }
 }

@@ -46,33 +46,3 @@ declare module 'truffle-contract' {
     function contract <A>(json: any): contract.TruffleContract<A>
     export = contract
 }
-
-declare module 'truffle-deployer' {
-    import * as truffle from 'truffle-contract'
-
-    namespace Deployer { }
-
-    class Deployer {
-        deploy <A> (contract: truffle.TruffleContract<A>, ...args: Array<any>): Deployer
-        link <A, B> (library: truffle.TruffleContract<A>, contract: truffle.TruffleContract<B>): Deployer
-        then(f: () => void): Deployer
-        network_id: string
-    }
-
-    export = Deployer
-}
-
-declare module 'truffle' {
-    import truffleContract from 'truffle-contract'
-    import Web3 from 'web3'
-
-    interface ArtifactsGlobal {
-        require <A> (name: string): truffleContract.TruffleContract<A>
-    }
-
-    global {
-        function contract (name: string, callback: (accounts: Array<string>) => void): void
-        const artifacts: ArtifactsGlobal
-        const web3: Web3
-    }
-}

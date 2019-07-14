@@ -2,17 +2,7 @@
   "compilerOptions": {
     "target": "es2017",
     "module": "commonjs",
-    "lib": [ "es2017" ],
-    "sourceMap": true,
-    "declaration": true,
-    "strict": true,
-    "noImplicitReturns": true,
     "esModuleInterop": true,
-    "types": [
-      "@machinomy/types-truffle-contract"
-    ]
-  },
-  "include": [
-    "index.d.ts"
-  ]
+    "lib": [ "es2017" ]
+  }
 }
