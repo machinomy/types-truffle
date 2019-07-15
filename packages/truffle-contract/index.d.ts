@@ -7,6 +7,8 @@ declare module 'truffle-contract' {
     namespace contract {
         export interface DeployedContract {
             address: string
+            transactionHash: string,
+            allEvents: any
         }
 
         export type HexString = string
